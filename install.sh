@@ -30,6 +30,7 @@ if [ "$ans" == "Y" ]; then
 
                 #install PHP
                 sudo yum install php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+                sudo service httpd restart
         fi
 else
         echo "Thank you"
